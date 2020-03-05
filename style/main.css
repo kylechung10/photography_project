@@ -1,0 +1,307 @@
+@import "normalize.css";
+
+/*
+CSS REQ
+
+Styling for all elements
+Colors/Fonts/Sizes
+Media Queries (3 Screen Sizes)
+Styling for grid/grid-item
+Comments
+NO FRAMEWORKS
+*/
+
+body {
+    background-color: black;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    padding-top: 500px;
+    padding-bottom: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.insta {
+    text-decoration: none;
+    color: grey;
+}
+
+.insta:hover {
+    color: red;
+}
+
+/*Large screens (desktops/laptops)*/
+@media screen and (min-width:1100px){
+
+/*Heading style*/
+h1 {
+    font-size: 300%;
+}
+
+/*Navigation menu styling*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #484848;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: block;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+
+li a:hover, .dropbown:hover .dropbtn {
+    background-color: #333;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 125px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Image styling*/
+img {
+    width: 100%;
+    border: 10px solid white;
+}
+
+/*Paragraph styling*/
+
+.abouttxt {
+    height: 800px;
+    padding-top: 400px;
+}
+
+.opening {
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.textinfo {
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    text-indent: 50px;
+    margin: auto;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*Grid setup*/
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    grid-column-gap: 30px;
+    grid-row-gap: 200px;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+/*Last two photos*/
+.tall1 {
+    grid-row: 5 / span 2;
+    grid-column: 1 / span 1;
+}
+
+.t5 {
+    grid-row: 5 / span 2;
+    grid-column: 2 / span 2;
+}
+
+.tall2 {
+    grid-row: 7 / span 2;
+    grid-column: 1;
+}
+
+.t6 {
+    grid-row: 7 / span 2;
+    grid-column: 2 / span 2;
+}
+
+}
+
+/*Medium Screen size (tablets)*/
+ @media screen and (max-width:1100px) and (min-width:600px){
+
+h1 {
+    font-size: 200%;
+}
+
+/*Nav bar now vertical*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #484848;
+}
+
+li a, .dropbtn {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropbown:hover .dropbtn {
+    background-color: #333;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 125px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}    
+
+/*Image styling*/
+img {
+    width: 95%;
+    border: 10px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Grid setup only have 1 column*/
+.grid {
+    display: block;
+    grid-template-columns: auto;
+}
+
+.opening {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 150%;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.textinfo {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 5% 75px 5%;
+    text-indent: 50px;
+    margin: auto;
+    font-size: 120%;
+    text-align: justify;
+}
+
+ }
+
+ @media screen and (max-width:600px){
+
+h1 {
+    font-size: 150%;
+    padding-top: 50px;
+}
+
+/*Hide navigation bar when going on a mobile device to reduce clutter*/
+ul {
+    display: none;
+}
+
+/*Image styling*/
+img {
+    width: 95%;
+    border: 10px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Grid setup only have 1 column*/
+.grid {
+    display: block;
+    grid-template-columns: auto;
+}
+
+.opening {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 100%;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.textinfo {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 5% 75px 5%;
+    margin: auto;
+    font-size: 100%;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+ }

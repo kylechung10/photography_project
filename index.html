@@ -1,0 +1,222 @@
+<!--
+    HTML REQ
+    2 Text Elements
+    2 Images
+    8 Content Elements
+    Comments/Head Formatting
+    Grid Setup
+-->
+<!--Kyle Chung Major Assignment 2-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KC Photography</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="shortcut icon" href="cameraicon.ico" />
+  </head>
+
+  <body>
+    <h1>KYLE CHUNG FOTOGRAFIE</h1>
+    <!--Header of the page-->
+
+    <!--Navigation bar-->
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Gallery</a>
+        <div class="dropdown-content">
+          <a href="#img1">Image 1</a>
+          <a href="#img2">Image 2</a>
+          <a href="#img3">Image 3</a>
+          <a href="#img4">Image 4</a>
+          <a href="#img5">Image 5</a>
+          <a href="#img6">Image 6</a>
+        </div>
+      </li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="grid-layout abouttxt">
+      <p class="opening">
+        Collection of my favorite photos I took during my trip to the
+        Netherlands
+      </p>
+    </div>
+
+    <!--Photos and information put within a grid-->
+    <div class="grid">
+      <div class="grid-layout photo wide">
+        <img
+          src="image/netherlands_001.jpg"
+          srcset="
+            image/netherlands_001lg.jpg 1800w,
+            image/netherlands_001md.jpg 1080w,
+            image/netherlands_001sm.jpg  480w
+          "
+          sizes="100%"
+          id="img1"
+          alt="Picture of an Amsterdam canal"
+        />
+      </div>
+      <div class="grid-layout textinfo">
+        <p>
+          Amsterdam, the capital of the Netherlands, built more than 60 miles of
+          canals. This makes about 90 islands and 1,500 bridges. There are four
+          main concentric half-circles canals known as, <i>Grachtengordel</i>,
+          three of the canals are mostly for residental development and the
+          fourth, outer canal called <i>Singelgracht</i> is used for defense and
+          water management. As seen in the picture, many of the canals have bike
+          paths and automobile streets running along them.
+        </p>
+      </div>
+
+      <div class="grid-layout photo wide">
+        <img
+          src="image/netherlands_002.jpg"
+          srcset="
+            image/netherlands_002lg.jpg 1800w,
+            image/netherlands_002md.jpg 1080w,
+            image/netherlands_002sm.jpg  480w
+          "
+          sizes="100%"
+          id="img2"
+          alt="Picture of a windmill town"
+        />
+      </div>
+      <div class="grid-layout textinfo">
+        <p>
+          Zaanse Schans is the windmill village right outside of Amsterdam. The
+          change of scenery was quick as after about a 15 minute drive from the
+          busy city of Amsterdam I was greeted open lands and windmills. Each
+          windmill has its own unique name
+          <i
+            >De Huisman, De Gekroonde Poelenburg, De Kat, Het Jonge Schaap, De
+            Os, De Zoeker, Het Klaverblad, and De Bonte Hen.</i
+          >
+          Every single windmill performs a specific task such as a mustardmill,
+          sawmill, dyemill, or oilmil. Windmill operators can open or close the
+          sails to control the speed of the windmill depending on the strength
+          of the wind, and also rotate the direction depending on the direction
+          of the wind.
+        </p>
+      </div>
+
+      <div class="grid-layout photo wide">
+        <img
+          src="image/netherlands_003.jpg"
+          srcset="
+            image/netherlands_003lg.jpg 1800w,
+            image/netherlands_003md.jpg 1080w,
+            image/netherlands_003sm.jpg  480w
+          "
+          sizes="100%"
+          id="img3"
+          alt="Picture inside a windmill"
+        />
+      </div>
+      <div class="grid-layout textinfo">
+        <p>
+          This photo was taken inside one of the sawmill windmills within Zaanse
+          Schans. Volunteers keep the windmills running everyday allowing
+          everyone to come visit and experience these wonderful structures. Here
+          you can see the various parts that a windmill operator might need to
+          maintain these machines. Those wooden shoes are called <i>clogs</i>,
+          and they are wooden shoes meant to keep the moisture out when working
+          out in the damp fields.
+        </p>
+      </div>
+
+      <div class="grid-layout photo wide">
+        <img
+          src="image/netherlands_004.jpg"
+          srcset="
+            image/netherlands_004lg.jpg 1800w,
+            image/netherlands_004md.jpg 1080w,
+            image/netherlands_004sm.jpg  480w
+          "
+          sizes="100%"
+          id="img4"
+          alt="Picture of Muiderslot Castle"
+        />
+      </div>
+      <div class="grid-layout textinfo">
+        <p>
+          The Muiderslot is a castle located southeast of Amsterdam. The castle
+          was constructed in 1280 by Count Floris V. It was used to enforce a
+          toll on traders that passed along the trade route to Utrecht. It is a
+          small castle with a surrounding moat, and it measures around 32 by 35
+          meters with a brick wall around 1.5 meters thick. Around 100 years
+          later it was rebuilt in the same spot using the same plan, by Albert
+          I, Duke of Bavaria. Currently, it is a national museum that was
+          restored to replicate how it looked in the 17th century.
+        </p>
+      </div>
+
+      <div class="grid-layout photo tall1">
+        <img
+          src="image/netherlands_005.jpg"
+          srcset="
+            image/netherlands_005lg.jpg 1800w,
+            image/netherlands_005md.jpg 1080w,
+            image/netherlands_005sm.jpg  480w
+          "
+          sizes="100%"
+          id="img5"
+          alt="Picture of Gouda City Hall"
+        />
+      </div>
+      <div class="grid-layout textinfo t5">
+        <p>
+          This is the Gouda city hall. Gouda is the province of South Holland,
+          holding a population of around 72,000 people. It is famous for its
+          Gouda cheese, stroopwafels, smoking pipes, and 15th-century city hall.
+          It is mostly famous for its Gouda cheese market that is held every
+          Thursday. Cheese is brought, weighed, and auctioned off at the market,
+          making it a popular tourist attraction.
+        </p>
+      </div>
+
+      <div class="grid-layout photo tall2">
+        <img
+          src="image/netherlands_006.jpg"
+          srcset="
+            image/netherlands_006lg.jpg 1800w,
+            image/netherlands_006md.jpg 1080w,
+            image/netherlands_006sm.jpg  480w
+          "
+          sizes="100%"
+          id="img6"
+          alt="Picture of Sint Janskerk"
+        />
+      </div>
+      <div class="grid-layout textinfo t6">
+        <p>
+          The Sint Janskerk is located in Gouda, and is a large Gothic church.
+          It is famous for its stained glass windows, for which it has been
+          placed on the UNESCO (United Nations Educational, Scientific and
+          Cultural Organization) list of Dutch monuments. The church is
+          dedicated to John the Bapist, the patron saint of Gouda, and was
+          constructed during the 15th and 16th centuries. In 1552 a large
+          portion of the church was burnt, and rebuilt larger than before. The
+          famous stained glass windows were made by the brothers Dirk and Wouter
+          Crabeth I.
+        </p>
+      </div>
+    </div>
+
+    <h3 id="about">
+      All photographs were taken by me<br />
+      <br />
+      I am currently a student at UCF studying Web Development. I took up
+      photography as a hobby around 2 years ago and enjoy sharing my photos with
+      everyone.
+      <br /><br />Instagram:
+      <a
+        href="https://www.instagram.com/kylechungphotography/"
+        class="insta"
+        target="_blank"
+        >@kylechungphotography</a
+      >
+    </h3>
+  </body>
+</html>
